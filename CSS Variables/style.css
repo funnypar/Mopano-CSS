@@ -1,0 +1,68 @@
+:root {
+  --primaryColor: rgb(171, 4, 151);
+  --greenColor: rgb(122, 209, 15);
+  --blueColor: rgb(13, 53, 231);
+  --transition: all 3s;
+  --letterSpace: 5px;
+}
+
+.p1 h1 {
+  color: var(--primaryColor);
+}
+.p2 h1 {
+  color: var(--greenColor);
+}
+.p3 h1 {
+  color: var(--blueColor);
+}
+
+.p1:hover {
+  letter-spacing: var(--letterSpace);
+  transition: var(--transition);
+  max-width: 70vw;
+}
+
+.p2:hover {
+  background: linear-gradient(to right, var(--primaryColor), white);
+  letter-spacing: var(--letterSpace);
+  transition: var(--transition);
+}
+.p3:hover {
+  animation: noneSee 3s;
+}
+
+@keyframes noneSee {
+  0% {
+    opacity: 1;
+  }
+  /* 10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  } */
+  50% {
+    opacity: 0.5;
+  }
+  /* 60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.1;
+  } */
+  100% {
+    opacity: 0;
+  }
+}
